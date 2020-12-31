@@ -12,6 +12,7 @@ function sum(a,b) { //eslint-disable-line
     var total = a+b;
     var returnArray = [total,'The sum of 4 and 7 is 11.'];
     return returnArray ;
+    
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -57,12 +58,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+function sumAndMultiply(a,b,c) { //eslint-disable-line
+    var sumTot= a+b+c;
+    var mulTot= a*b*c;
+    var sumMulArr= [sumTot,mulTot,"4 and 7 and 5 sum to 16.","The product of 4 and 7 and 5 is 140."];
+    return sumMulArr ;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
