@@ -138,10 +138,10 @@ var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     for (var count=0;count < testDynamicArray.length;count++){
-        index=multiply(test,testDynamicArray[count])[0];
-        // console.log(test);
+        index=multiply(index,testDynamicArray[count])[0];
+        // console.log(index);
     }
-    var testArray=[test,"The numbers 1,2,3,4,5 have a product of 120."];
+    var testArray=[index,"The numbers 1,2,3,4,5 have a product of 120."];
     return testArray;
 }
 
