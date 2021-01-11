@@ -36,9 +36,7 @@ function multiply(a, b) { //eslint-disable-line
         total,
         "The product of 5 and 9 is 45."
     ];
-
     return returnArray;
-
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -59,8 +57,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    var sumTot = sum(a,b)[0]+c;
-    var mulTot = multiply(a,b)[0]*c;
+    var sumAB = sum(a,b)[0];
+    var sumTot = sum(sumAB,c)[0];
+    var mulAB = multiply(a,b)[0];
+    var mulTot = multiply(mulAB,c)[0];
     var sumMulArr = [sumTot, mulTot, "4 and 7 and 5 sum to 16.", "The product of 4 and 7 and 5 is 140."];
     return sumMulArr;
 }
@@ -84,7 +84,8 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    var sumArr = [sum(testArray[0],testArray[1])[0]+testArray[2], "2,3,4 was passed in as an array of numbers, and 9 is their sum."];
+    var sumABProblem6=sum(testArray[0],testArray[1])[0];
+    var sumArr=[sum(sumABProblem6,testArray[2])[0],"2,3,4 was passed in as an array of numbers, and 9 is their sum."];
     return sumArr;
 }
 
@@ -107,7 +108,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
     var arrOfNum =[2,3,4];
-    multArr =[multiply(arrOfNum[0],arrOfNum[1])[0]*arrOfNum[2],"The numbers 2,3,4 have a product of 24."];
+    var mulABProblem5 = multiply(arrOfNum[0],arrOfNum[1])[0];
+    multArr =[multiply(mulABProblem5,arrOfNum[2])[0],"The numbers 2,3,4 have a product of 24."];
     return multArr;
 }
 
